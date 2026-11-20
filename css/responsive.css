@@ -1,0 +1,2 @@
+@media print{header,footer,.mesh,.row,nav{display:none!important}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition:none!important}.rv{opacity:1;transform:none}}

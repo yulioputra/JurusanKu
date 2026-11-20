@@ -1,0 +1,3 @@
+:root{--bg:#f7f5ff;--sf:#ffffffcc;--tx:#1c1838;--tx2:#635f84;--bd:#e4e0fb;--a:#6c4cf5;--b:#ff5fa2;--c:#19c3b1;--r:20px;font-family:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#100e26;--sf:#1b1840cc;--tx:#f0eeff;--tx2:#aeaad4;--bd:#322e64}}
+:root[data-theme=dark]{--bg:#100e26;--sf:#1b1840cc;--tx:#f0eeff;--tx2:#aeaad4;--bd:#322e64}

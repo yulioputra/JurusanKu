@@ -1,0 +1,4 @@
+.rv{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}.rv.in{opacity:1;transform:none}@keyframes up{from{opacity:0;transform:translateY(12px)}}
+.cf{position:fixed;top:-20px;width:10px;height:14px;z-index:40;animation:fall 2.8s linear forwards}@keyframes fall{to{transform:translateY(105vh) rotate(720deg);opacity:.2}}
+.toast{position:fixed;left:50%;bottom:30px;transform:translateX(-50%);background:var(--a);color:#fff;padding:10px 20px;border-radius:99px;z-index:60;animation:up .3s}
+.fav{background:none;border:0;font-size:1.4rem;cursor:pointer;float:right}

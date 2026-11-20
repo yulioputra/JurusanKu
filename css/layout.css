@@ -1,0 +1,6 @@
+header{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:10px;padding:10px 16px;padding-top:calc(10px + env(safe-area-inset-top));background:var(--sf);backdrop-filter:blur(14px);border-bottom:1px solid var(--bd)}
+.logo{font-weight:800;font-size:1.2rem;text-decoration:none;background:linear-gradient(90deg,var(--a),var(--b));-webkit-background-clip:text;background-clip:text;color:transparent;white-space:nowrap}
+nav{display:flex;gap:2px;margin-left:auto;overflow-x:auto;scrollbar-width:none}nav a{color:var(--tx2);text-decoration:none;padding:8px 12px;border-radius:99px;font-size:.9rem;white-space:nowrap;transition:.2s}
+nav a:hover,nav a.on{color:#fff;background:var(--a)}
+.ic-btn{border:1px solid var(--bd);background:var(--sf);border-radius:50%;width:42px;height:42px;cursor:pointer;font-size:1.1rem;flex:none}
+main{max-width:1000px;margin:0 auto;padding:18px 18px 70px}footer{text-align:center;color:var(--tx2);font-size:.8rem;padding:20px}
