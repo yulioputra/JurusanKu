@@ -1,0 +1,2 @@
+function toast(t){const e=document.createElement('div');e.className='toast';e.textContent=t;document.body.append(e);setTimeout(()=>e.remove(),2200)}
+function conf(){const c=['#6c4cf5','#ff5fa2','#19c3b1','#ffc83d'];for(let i=0;i<50;i++){const e=document.createElement('i');e.className='cf';e.style.cssText=`left:${Math.random()*100}vw;background:${c[i%4]};animation-delay:${Math.random()}s;animation-duration:${2+Math.random()*1.5}s`;document.body.append(e);setTimeout(()=>e.remove(),4500)}}

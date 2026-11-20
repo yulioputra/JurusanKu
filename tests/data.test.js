@@ -1,0 +1,11 @@
+const test=require('node:test'),assert=require('node:assert'),fs=require('fs'),path=require('path'),vm=require('vm');
+const root=path.join(__dirname,'..');
+const walk=d=>fs.readdirSync(d,{withFileTypes:true}).flatMap(f=>f.isDirectory()?(['node_modules','dist','.git','.github','templates'].includes(f.name)?[]:walk(path.join(d,f.name))):[path.join(d,f.name)]);
+const files=walk(root),htmls=files.filter(f=>f.endsWith('.html')),jss=files.filter(f=>f.endsWith('.js')&&f.includes(path.sep+'js'+path.sep));
+const data=vm.runInNewContext(fs.readFileSync(path.join(root,'js/generated/data.js'),'utf8')+';({TR,Q,J})');
+test('setiap bidang minat punya pertanyaan',()=>{for(const k of Object.keys(data.TR))assert.ok(data.Q.some(q=>q[1]===k),k)});
+test('id dan slug jurusan unik',()=>{for(const f of ['id','slug']){const v=data.J.map(j=>j[f]);assert.strictEqual(new Set(v).size,v.length,f)}});
+test('setiap jurusan punya halaman detail',()=>{data.J.forEach(j=>assert.ok(fs.existsSync(path.join(root,'jurusan',j.slug+'.html')),j.slug))});
+test('ada banyak halaman HTML',()=>{assert.ok(htmls.length>=25,String(htmls.length))});
+test('semua file JS valid',()=>{jss.forEach(f=>assert.doesNotThrow(()=>new vm.Script(fs.readFileSync(f,'utf8'),{filename:f})))});
+test('semua tautan dan aset lokal ada',()=>{for(const f of htmls){const h=fs.readFileSync(f,'utf8');for(const m of h.matchAll(/(?:src|href)="([^"#:?]+\.(?:html|css|js|svg))"/g)){assert.ok(fs.existsSync(path.resolve(path.dirname(f),m[1])),path.relative(root,f)+' -> '+m[1])}}});

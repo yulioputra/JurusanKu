@@ -1,0 +1,6 @@
+document.addEventListener('click',e=>{const b=e.target.closest('[data-act]');if(!b)return;const a=b.dataset.act,id=+b.dataset.id;
+if(a==='theme'){const r=document.documentElement,d=r.dataset.theme==='dark'||(!r.dataset.theme&&matchMedia('(prefers-color-scheme:dark)').matches);r.dataset.theme=d?'light':'dark';store.set('theme',r.dataset.theme)}
+else if(a==='fav'){S.fav=S.fav.includes(id)?S.fav.filter(x=>x!==id):[...S.fav,id];store.set('fav',S.fav);const on=S.fav.includes(id);toast(on?'Ditambahkan ke favorit':'Dihapus dari favorit');$$(`[data-act=fav][data-id="${id}"]`).forEach(x=>x.textContent=x.textContent.replace(/^(❤️|🤍)/,on?'❤️':'🤍'));if(window.refresh)refresh()}
+else if(a==='cmp'){if(S.cmp.includes(id))S.cmp=S.cmp.filter(x=>x!==id);else if(S.cmp.length>=3)return toast('Maksimal 3 jurusan');else S.cmp.push(id);store.set('cmp',S.cmp);const on=S.cmp.includes(id);$$(`[data-act=cmp][data-id="${id}"]`).forEach(x=>x.textContent=on?'✓ Dibanding':'+ Banding');if(window.refresh)refresh()}
+else if(a==='print')print();
+else if(a==='copy'&&S.res){const t='Hasil tes JurusanKu ('+S.res.lv+'):\n'+S.res.top.slice(0,3).map((r,i)=>`${i+1}. ${jb(r.id).n} (${r.p}%)`).join('\n');(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(()=>toast('Hasil disalin'),()=>toast('Gagal menyalin'))}});

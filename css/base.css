@@ -3,4 +3,3 @@ body{margin:0;background:var(--bg);color:var(--tx);line-height:1.6;min-height:10
 .mesh{position:fixed;inset:0;z-index:-1;overflow:hidden}.mesh i{position:absolute;border-radius:50%;filter:blur(70px);opacity:.35;animation:fl 14s ease-in-out infinite}
 .mesh i:nth-child(1){width:420px;height:420px;background:var(--a);top:-100px;left:-80px}.mesh i:nth-child(2){width:360px;height:360px;background:var(--b);right:-80px;top:30%;animation-delay:-5s}.mesh i:nth-child(3){width:320px;height:320px;background:var(--c);bottom:-80px;left:30%;animation-delay:-9s}
 @keyframes fl{50%{transform:translate(50px,-40px) scale(1.2)}}
-                     
