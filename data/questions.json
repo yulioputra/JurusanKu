@@ -1,0 +1,58 @@
+[
+  {
+    "text": "Apakah kamu suka bermain game dan penasaran bagaimana game dibuat?",
+    "trait": "tek"
+  },
+  {
+    "text": "Apakah kamu suka menggambar, mendesain, atau mengotak-atik tampilan?",
+    "trait": "kre"
+  },
+  {
+    "text": "Apakah kamu pernah (atau ingin) berjualan dan menghitung untung rugi?",
+    "trait": "bis"
+  },
+  {
+    "text": "Apakah kamu senang membongkar mesin atau perangkat elektronik?",
+    "trait": "mes"
+  },
+  {
+    "text": "Apakah kamu senang merawat atau menolong orang yang sedang sakit?",
+    "trait": "kes"
+  },
+  {
+    "text": "Apakah kamu senang menjelaskan sesuatu ke teman sampai mereka paham?",
+    "trait": "sos"
+  },
+  {
+    "text": "Apakah kamu sering bertanya “kenapa bisa begitu?” soal fenomena alam?",
+    "trait": "sai"
+  },
+  {
+    "text": "Apakah kamu menikmati teka-teki logika atau mencoba menulis kode?",
+    "trait": "tek"
+  },
+  {
+    "text": "Apakah kamu suka membuat konten, seperti edit video, foto, atau poster?",
+    "trait": "kre"
+  },
+  {
+    "text": "Apakah kamu teliti dalam mengatur uang, data, atau administrasi?",
+    "trait": "bis"
+  },
+  {
+    "text": "Apakah kamu lebih suka belajar sambil praktik langsung dengan alat?",
+    "trait": "mes"
+  },
+  {
+    "text": "Apakah kamu tahan melihat kondisi orang sakit demi membantu?",
+    "trait": "kes"
+  },
+  {
+    "text": "Apakah kamu suka memimpin kelompok atau aktif berorganisasi?",
+    "trait": "sos"
+  },
+  {
+    "text": "Apakah kamu betah membaca dan bereksperimen untuk membuktikan sesuatu?",
+    "trait": "sai"
+  }
+]

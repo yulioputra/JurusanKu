@@ -1,0 +1,60 @@
+{
+  "traits": [
+    {
+      "id": "tek",
+      "emoji": "💻",
+      "label": "Teknologi",
+      "phrase": "suka teknologi dan logika"
+    },
+    {
+      "id": "kre",
+      "emoji": "🎨",
+      "label": "Kreatif",
+      "phrase": "punya jiwa kreatif"
+    },
+    {
+      "id": "bis",
+      "emoji": "📈",
+      "label": "Bisnis",
+      "phrase": "tertarik pada bisnis dan pengelolaan"
+    },
+    {
+      "id": "mes",
+      "emoji": "🔧",
+      "label": "Mekanik",
+      "phrase": "suka praktik dengan mesin dan alat"
+    },
+    {
+      "id": "kes",
+      "emoji": "🩺",
+      "label": "Kesehatan",
+      "phrase": "peduli pada kesehatan dan menolong orang"
+    },
+    {
+      "id": "sos",
+      "emoji": "🤝",
+      "label": "Sosial",
+      "phrase": "senang berinteraksi dan membimbing orang"
+    },
+    {
+      "id": "sai",
+      "emoji": "🔬",
+      "label": "Sains",
+      "phrase": "penasaran pada sains dan riset"
+    }
+  ],
+  "answers": [
+    {
+      "label": "Banget! 😍",
+      "value": 2
+    },
+    {
+      "label": "Lumayan 🙂",
+      "value": 1
+    },
+    {
+      "label": "Nggak terlalu 😐",
+      "value": 0
+    }
+  ]
+}
