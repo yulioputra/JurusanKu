@@ -1,0 +1,18 @@
+[
+  {
+    "q": "Apakah hasil tes ini pasti benar?",
+    "a": "Tidak. Hasilnya gambaran awal dari minatmu. Pertimbangkan juga kemampuan, biaya, lokasi, dan masukan guru BK serta orang tua."
+  },
+  {
+    "q": "Bagaimana skor kecocokan dihitung?",
+    "a": "Setiap jawabanmu menambah skor pada 7 bidang minat. Tiap jurusan punya bobot bidang yang berbeda, lalu dicocokkan dengan profil minatmu."
+  },
+  {
+    "q": "Bolehkah ikut tes lebih dari sekali?",
+    "a": "Boleh. Coba untuk SMK dan kuliah, lalu bandingkan hasilnya."
+  },
+  {
+    "q": "Datamu disimpan di mana?",
+    "a": "Hanya di browser perangkatmu (favorit, tema, dan hasil terakhir). Tidak ada yang dikirim ke server."
+  }
+]
