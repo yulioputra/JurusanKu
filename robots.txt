@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jurusanku.my.id/sitemap.xml
